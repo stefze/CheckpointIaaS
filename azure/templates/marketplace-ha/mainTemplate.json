@@ -297,7 +297,7 @@
       "metadata": {
         "description": "Use the following URI when deploying a custom template: https://raw.githubusercontent.com/CheckPointSW/CloudGuardIaaS/master/azure/templates/"
       },
-      "defaultValue": "https://raw.githubusercontent.com/CheckPointSW/CloudGuardIaaS/master/azure/templates/"
+      "defaultValue": "https://githubusercontent.com/stefze/CheckpointIaaS/blob/master/azure/templates/"
     },
     "_artifactsLocationSasToken": {
       "type": "securestring",
@@ -505,7 +505,7 @@
     "count": 2,
     "bootstrapScript64": "[base64(parameters('bootstrapScript'))]",
     "allowUploadDownload": "[parameters('allowDownloadFromUploadToCheckPoint')]",
-    "_artifactsLocation": "[if(contains(parameters('_artifactsLocation'),'raw.githubusercontent.com/CheckPointSW/CloudGuardIaaS/master/azure/templates/marketplace'),'https://raw.githubusercontent.com/CheckPointSW/CloudGuardIaaS/master/azure/templates/',parameters('_artifactsLocation'))]",
+    "_artifactsLocation": "[if(contains(parameters('_artifactsLocation'),'raw.githubusercontent.com/stefze/CheckpointIaaS/edit/master/azure/templates/marketplace'),'https://raw.githubusercontent.com/stefze/CheckpointIaaS/edit/master/azure/templates/',parameters('_artifactsLocation'))]",
     "networkSetupURL": "[uri(variables('_artifactsLocation'), concat('nestedtemplates/vnet-2-subnet-ha2-', parameters('vnetNewOrExisting'), '.json', parameters('_artifactsLocationSasToken')))]",
     "ExsitingNsgRoleAssignmentURL": "[uri(variables('_artifactsLocation'), concat('nestedtemplates/existing-nsg-RoleAssignment', '.json'))]",
     "sicKey": "[parameters('sicKey')]",
