@@ -1,4 +1,5 @@
 # Check Point CloudGuard Network Security High Availability for Azure
+# Forked Repo to support Availability Zones Deployment in Azure Italy North
 
 Check Point CloudGuard Network Security delivers advanced, multi-layered threat prevention to protect customer assets in Azure from malware and sophisticated threats. As a Microsoft Azure certified solution, CloudGuard Network Security enables you to easily and seamlessly secure your workloads while providing secure connectivity across your cloud and on-premises environments.
 
