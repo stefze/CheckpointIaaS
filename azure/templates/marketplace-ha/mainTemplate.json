@@ -537,7 +537,8 @@
       "japaneast",
       "koreacentral",
       "southeastasia",
-      "eastasia"
+      "eastasia",
+      "italynorth"
     ],
     "availabilitySetProperty": {
       "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
