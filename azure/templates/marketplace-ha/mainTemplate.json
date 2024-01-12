@@ -287,7 +287,7 @@
         "Availability Set",
         "Availability Zones"
       ],
-      "defaultValue": "Availability Set",
+      "defaultValue": "Availability Zones",
       "metadata": {
         "description": "Use replicated Cluster VMs in Availability Set or Availability Zones"
       }
